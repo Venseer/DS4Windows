@@ -55,6 +55,7 @@
             this.addOriginGamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.browseForOtherProgramsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cBTurnOffDS4W = new System.Windows.Forms.CheckBox();
             this.cMSPrograms.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,11 +232,19 @@
             this.browseForOtherProgramsToolStripMenuItem.Name = "browseForOtherProgramsToolStripMenuItem";
             this.browseForOtherProgramsToolStripMenuItem.Click += new System.EventHandler(this.browseForOtherProgramsToolStripMenuItem_Click);
             // 
+            // cBTurnOffDS4W
+            // 
+            resources.ApplyResources(this.cBTurnOffDS4W, "cBTurnOffDS4W");
+            this.cBTurnOffDS4W.Name = "cBTurnOffDS4W";
+            this.cBTurnOffDS4W.UseVisualStyleBackColor = true;
+            this.cBTurnOffDS4W.CheckedChanged += new System.EventHandler(this.cBTurnOffDS4W_CheckedChanged);
+            // 
             // WinProgs
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.cBTurnOffDS4W);
             this.Controls.Add(this.pBProfilesTip);
             this.Controls.Add(this.bnHideUnchecked);
             this.Controls.Add(this.bnAddPrograms);
@@ -285,5 +294,6 @@
         private System.Windows.Forms.ToolStripMenuItem addOriginGamesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem browseForOtherProgramsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addDirectoryToolStripMenuItem;
+        private System.Windows.Forms.CheckBox cBTurnOffDS4W;
     }
 }
